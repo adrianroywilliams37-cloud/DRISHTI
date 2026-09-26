@@ -41,9 +41,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   }, [user]);
 
-  const login = async (userId: string, password: string) => {
+  const login = async (rawUserId: string, rawPassword: string) => {
     // Vercel deployment client-side authentication mock
     // In a real app this would hit the API gateway or Supabase Auth directly
+    const userId = (rawUserId || '').trim();
+    const password = (rawPassword || '').trim();
     
     // Nodal officers
     if (userId.startsWith('user_nodal_') && password === 'nodal') {

@@ -162,6 +162,47 @@ app.post("/api/evaluate-bidder", (req: any, res) => {
   });
 });
 
+// Predictive Radar Endpoint
+app.post("/api/predict-risk", (req: any, res) => {
+  const { project_id, vectorized_features } = req.body;
+  const v_burn_yield = vectorized_features && vectorized_features.length > 1 ? vectorized_features[1] : 0;
+  
+  let ai_risk_score = "Low";
+  let render_status = "Green";
+  let cascading_delay = "Forecast: Project is progressing according to baseline schedule.";
+  let anomaly_score = 0.1;
+
+  if (v_burn_yield < 20) {
+    ai_risk_score = "Critical";
+    render_status = "BlinkingRed";
+    cascading_delay = "Forecast: 6+ months delay due to compounded logistical gridlock.";
+    anomaly_score = -0.3;
+  } else if (v_burn_yield < 50) {
+    ai_risk_score = "High";
+    render_status = "Amber";
+    cascading_delay = "Forecast: 2-3 months delay detected.";
+    anomaly_score = -0.1;
+  } else if (v_burn_yield < 80) {
+    ai_risk_score = "Moderate";
+    render_status = "Amber";
+    cascading_delay = "Forecast: On track, but expenditure is outpacing physical progress.";
+    anomaly_score = 0.05;
+  }
+
+  res.json({
+    project_id,
+    timestamp: new Date().toISOString(),
+    analysis_summary: {
+      ai_risk_score,
+      anomaly_score
+    },
+    visualization_input: {
+      render_status,
+      cascading_delay_prediction: cascading_delay
+    }
+  });
+});
+
 // Expose the single source of truth for the Mobile App Field Nodes
 app.get("/api/projects", async (req: any, res) => {
   try {

@@ -41,7 +41,7 @@ export function PredictiveRadar() {
             project.risk_score
           ];
 
-          const response = await fetch('http://localhost:8000/predict-risk', {
+          const response = await fetch('/api/predict-risk', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({

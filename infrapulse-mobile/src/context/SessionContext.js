@@ -25,8 +25,10 @@ export const SessionProvider = ({ children }) => {
     loadSession();
   }, []);
 
-  const login = async (userId, password) => {
+  const login = async (rawUserId, rawPassword) => {
     try {
+      const userId = (rawUserId || '').trim();
+      const password = (rawPassword || '').trim();
       let user = null;
       
       // Nodal officers
