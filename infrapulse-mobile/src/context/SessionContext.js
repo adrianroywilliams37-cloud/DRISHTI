@@ -27,18 +27,40 @@ export const SessionProvider = ({ children }) => {
 
   const login = async (userId, password) => {
     try {
-      const serverUrl = await getWebServerUrl();
-      const response = await fetch(`${serverUrl}/api/login`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ userId, password })
-      });
+      let user = null;
       
-      if (!response.ok) {
+      // Nodal officers
+      if (userId.startsWith('user_nodal_') && password === 'nodal') {
+        user = {
+          id: userId,
+          role: 'nodal',
+          name: `Nodal Officer ${userId.split('_').pop()}`,
+          pinnedProjects: []
+        };
+      } else {
+        // Ministry/Apex/Master
+        const credentials = {
+          'master_admin': { role: 'master', name: 'Master Admin', pass: 'password123' },
+          'user_ministry_1': { role: 'ministry', name: 'Aditi Sharma (Ministry Analyst)', sector: 'Railways', pass: 'ministry' },
+          'user_apex_1': { role: 'apex', name: 'Secretary, Railways', sector: 'Railways', pass: 'apex' }
+        };
+
+        const validUser = credentials[userId];
+        if (validUser && validUser.pass === password) {
+          user = {
+            id: userId,
+            role: validUser.role,
+            name: validUser.name,
+            sector: validUser.sector,
+            pinnedProjects: []
+          };
+        }
+      }
+
+      if (!user) {
         throw new Error('Invalid credentials');
       }
-      
-      const user = await response.json();
+
       await AsyncStorage.setItem('@infrapulse_session', JSON.stringify(user));
       setActiveUser(user);
       return user;
