@@ -14,7 +14,7 @@ services:
   - type: web
     name: infrapulse-node-api
     env: node
-    buildCommand: npm install && npm install -g tsx
+    buildCommand: npm install && npm run build && npm install -g tsx
     startCommand: npx tsx server.ts
     envVars:
       - key: NODE_ENV
