@@ -1,0 +1,8 @@
+{
+  "name": "InfraPulse",
+  "description": "AI Early-Warning System for Central Sector Infrastructure Project Monitoring (MoSPI)",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

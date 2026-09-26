@@ -1,0 +1,1906 @@
+{
+  "ROAD-BHARAT-11": {
+    "project_id": "ROAD-BHARAT-11",
+    "sector": "Roads",
+    "architecture": "Modern Cable-Stayed Elevated Highway Viaduct",
+    "metrics": {
+      "total_units": 42,
+      "total_length_m": 450.0
+    },
+    "components": [
+      {
+        "id": "ftg-01",
+        "type": "West Foundation Footing",
+        "geometry": "box",
+        "position": [
+          -18.0,
+          0.5,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          5.0,
+          1.0,
+          8.0
+        ],
+        "label": "West Substructure Footing Pad",
+        "phase": "Substructure",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "ftg-02",
+        "type": "Central Pylon Deep Foundation",
+        "geometry": "box",
+        "position": [
+          0.0,
+          0.6,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          8.0,
+          1.2,
+          10.0
+        ],
+        "label": "Central Pylon Base Foundation",
+        "phase": "Substructure",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "ftg-03",
+        "type": "East Foundation Footing",
+        "geometry": "box",
+        "position": [
+          18.0,
+          0.5,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          5.0,
+          1.0,
+          8.0
+        ],
+        "label": "East Substructure Footing Pad",
+        "phase": "Substructure",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "pier-01",
+        "type": "West Pier Column",
+        "geometry": "cylinder",
+        "position": [
+          -18.0,
+          4.5,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          1.6,
+          7.0,
+          1.6
+        ],
+        "label": "West Pier Support Pillar",
+        "phase": "Substructure",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "pier-02",
+        "type": "Central Main Pylon Base",
+        "geometry": "box",
+        "position": [
+          0.0,
+          5.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          3.0,
+          8.0,
+          3.5
+        ],
+        "label": "Central Pylon Lower Stem",
+        "phase": "Substructure",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "pier-03",
+        "type": "East Pier Column",
+        "geometry": "cylinder",
+        "position": [
+          18.0,
+          4.5,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          1.6,
+          7.0,
+          1.6
+        ],
+        "label": "East Pier Support Pillar",
+        "phase": "Substructure",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "cap-01",
+        "type": "West Pier Cap",
+        "geometry": "box",
+        "position": [
+          -18.0,
+          8.3,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          2.2,
+          0.8,
+          9.0
+        ],
+        "label": "West Transverse Pier Cap",
+        "phase": "Superstructure",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "cap-02",
+        "type": "East Pier Cap",
+        "geometry": "box",
+        "position": [
+          18.0,
+          8.3,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          2.2,
+          0.8,
+          9.0
+        ],
+        "label": "East Transverse Pier Cap",
+        "phase": "Superstructure",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "pylon-01",
+        "type": "Cable Tower Pylon Column",
+        "geometry": "cone",
+        "position": [
+          0.0,
+          18.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          2.2,
+          18.0,
+          2.2
+        ],
+        "label": "A-Frame Central Pylon Tower",
+        "phase": "Superstructure",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "pylon-cap",
+        "type": "Pylon Anchorage Crown",
+        "geometry": "torus",
+        "position": [
+          0.0,
+          26.8,
+          0.0
+        ],
+        "rotation": [
+          1.57,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          2.0,
+          0.5,
+          2.0
+        ],
+        "label": "Cable Head Saddle Ring",
+        "phase": "Superstructure",
+        "status": "completed",
+        "material": "steel"
+      },
+      {
+        "id": "grd-01",
+        "type": "Longitudinal Steel Girder NW",
+        "geometry": "box",
+        "position": [
+          -9.0,
+          8.9,
+          -3.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          17.5,
+          0.7,
+          0.5
+        ],
+        "label": "Steel I-Beam North Deck Span 1",
+        "phase": "Superstructure",
+        "status": "completed",
+        "material": "steel"
+      },
+      {
+        "id": "grd-02",
+        "type": "Longitudinal Steel Girder SW",
+        "geometry": "box",
+        "position": [
+          -9.0,
+          8.9,
+          3.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          17.5,
+          0.7,
+          0.5
+        ],
+        "label": "Steel I-Beam South Deck Span 1",
+        "phase": "Superstructure",
+        "status": "completed",
+        "material": "steel"
+      },
+      {
+        "id": "grd-03",
+        "type": "Longitudinal Steel Girder NE",
+        "geometry": "box",
+        "position": [
+          9.0,
+          8.9,
+          -3.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          17.5,
+          0.7,
+          0.5
+        ],
+        "label": "Steel I-Beam North Deck Span 2",
+        "phase": "Superstructure",
+        "status": "completed",
+        "material": "steel"
+      },
+      {
+        "id": "grd-04",
+        "type": "Longitudinal Steel Girder SE",
+        "geometry": "box",
+        "position": [
+          9.0,
+          8.9,
+          3.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          17.5,
+          0.7,
+          0.5
+        ],
+        "label": "Steel I-Beam South Deck Span 2",
+        "phase": "Superstructure",
+        "status": "completed",
+        "material": "steel"
+      },
+      {
+        "id": "deck-01",
+        "type": "Concrete Deck Slab Far-West",
+        "geometry": "box",
+        "position": [
+          -18.0,
+          9.4,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          10.0,
+          0.4,
+          8.8
+        ],
+        "label": "Precast Deck Segment A1",
+        "phase": "Deck Construction",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "deck-02",
+        "type": "Concrete Deck Slab Mid-West",
+        "geometry": "box",
+        "position": [
+          -8.0,
+          9.4,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          10.0,
+          0.4,
+          8.8
+        ],
+        "label": "Precast Deck Segment A2",
+        "phase": "Deck Construction",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "deck-03",
+        "type": "Concrete Deck Slab Mid-East",
+        "geometry": "box",
+        "position": [
+          8.0,
+          9.4,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          10.0,
+          0.4,
+          8.8
+        ],
+        "label": "Precast Deck Segment B1",
+        "phase": "Deck Construction",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "deck-04",
+        "type": "Concrete Deck Slab Far-East",
+        "geometry": "box",
+        "position": [
+          18.0,
+          9.4,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          10.0,
+          0.4,
+          8.8
+        ],
+        "label": "Precast Deck Segment B2",
+        "phase": "Deck Construction",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "asph-01",
+        "type": "Asphalt Wearing Course Segment 1",
+        "geometry": "box",
+        "position": [
+          -13.0,
+          9.65,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          20.0,
+          0.1,
+          8.4
+        ],
+        "label": "Westbound Asphalt Pavement",
+        "phase": "Paving & Finishing",
+        "status": "completed",
+        "material": "asphalt"
+      },
+      {
+        "id": "asph-02",
+        "type": "Asphalt Wearing Course Segment 2",
+        "geometry": "box",
+        "position": [
+          7.0,
+          9.65,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          20.0,
+          0.1,
+          8.4
+        ],
+        "label": "Eastbound Asphalt Pavement",
+        "phase": "Paving & Finishing",
+        "status": "in_progress",
+        "material": "asphalt"
+      },
+      {
+        "id": "cbl-01",
+        "type": "Outer Stay Cable NW",
+        "geometry": "cylinder",
+        "position": [
+          -7.5,
+          18.0,
+          -0.2
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.82
+        ],
+        "dimensions": [
+          0.08,
+          19.5,
+          0.08
+        ],
+        "label": "Structural Stay Cable NW-Outer",
+        "phase": "Superstructure",
+        "status": "completed",
+        "material": "steel"
+      },
+      {
+        "id": "cbl-02",
+        "type": "Inner Stay Cable NW",
+        "geometry": "cylinder",
+        "position": [
+          -3.8,
+          18.0,
+          -0.2
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.45
+        ],
+        "dimensions": [
+          0.08,
+          16.5,
+          0.08
+        ],
+        "label": "Structural Stay Cable NW-Inner",
+        "phase": "Superstructure",
+        "status": "completed",
+        "material": "steel"
+      },
+      {
+        "id": "cbl-03",
+        "type": "Inner Stay Cable NE",
+        "geometry": "cylinder",
+        "position": [
+          3.8,
+          18.0,
+          -0.2
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          -0.45
+        ],
+        "dimensions": [
+          0.08,
+          16.5,
+          0.08
+        ],
+        "label": "Structural Stay Cable NE-Inner",
+        "phase": "Superstructure",
+        "status": "completed",
+        "material": "steel"
+      },
+      {
+        "id": "cbl-04",
+        "type": "Outer Stay Cable NE",
+        "geometry": "cylinder",
+        "position": [
+          7.5,
+          18.0,
+          -0.2
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          -0.82
+        ],
+        "dimensions": [
+          0.08,
+          19.5,
+          0.08
+        ],
+        "label": "Structural Stay Cable NE-Outer",
+        "phase": "Superstructure",
+        "status": "completed",
+        "material": "steel"
+      },
+      {
+        "id": "cbl-05",
+        "type": "Outer Stay Cable SW",
+        "geometry": "cylinder",
+        "position": [
+          -7.5,
+          18.0,
+          0.2
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.82
+        ],
+        "dimensions": [
+          0.08,
+          19.5,
+          0.08
+        ],
+        "label": "Structural Stay Cable SW-Outer",
+        "phase": "Superstructure",
+        "status": "completed",
+        "material": "steel"
+      },
+      {
+        "id": "cbl-06",
+        "type": "Outer Stay Cable SE",
+        "geometry": "cylinder",
+        "position": [
+          7.5,
+          18.0,
+          0.2
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          -0.82
+        ],
+        "dimensions": [
+          0.08,
+          19.5,
+          0.08
+        ],
+        "label": "Structural Stay Cable SE-Outer",
+        "phase": "Superstructure",
+        "status": "completed",
+        "material": "steel"
+      },
+      {
+        "id": "med-01",
+        "type": "Central Concrete Jersey Barrier West",
+        "geometry": "box",
+        "position": [
+          -11.0,
+          10.1,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          22.0,
+          0.8,
+          0.35
+        ],
+        "label": "Median Crash Barrier West Segment",
+        "phase": "Safety Installations",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "med-02",
+        "type": "Central Concrete Jersey Barrier East",
+        "geometry": "box",
+        "position": [
+          11.0,
+          10.1,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          22.0,
+          0.8,
+          0.35
+        ],
+        "label": "Median Crash Barrier East Segment",
+        "phase": "Safety Installations",
+        "status": "in_progress",
+        "material": "concrete"
+      },
+      {
+        "id": "gr-01",
+        "type": "North Outer Steel Guardrail",
+        "geometry": "box",
+        "position": [
+          0.0,
+          10.1,
+          -4.1
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          44.0,
+          0.7,
+          0.12
+        ],
+        "label": "North Perimeter Guardrail",
+        "phase": "Safety Installations",
+        "status": "completed",
+        "material": "steel"
+      },
+      {
+        "id": "gr-02",
+        "type": "South Outer Steel Guardrail",
+        "geometry": "box",
+        "position": [
+          0.0,
+          10.1,
+          4.1
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          44.0,
+          0.7,
+          0.12
+        ],
+        "label": "South Perimeter Guardrail",
+        "phase": "Safety Installations",
+        "status": "completed",
+        "material": "steel"
+      },
+      {
+        "id": "lgt-01",
+        "type": "Highway Lighting Pole NW",
+        "geometry": "cylinder",
+        "position": [
+          -16.0,
+          11.5,
+          -4.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          0.12,
+          3.0,
+          0.12
+        ],
+        "label": "LED Street Luminaire West-North",
+        "phase": "Electrical & Utilities",
+        "status": "completed",
+        "material": "steel"
+      },
+      {
+        "id": "lgt-02",
+        "type": "Highway Lighting Pole SW",
+        "geometry": "cylinder",
+        "position": [
+          -16.0,
+          11.5,
+          4.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          0.12,
+          3.0,
+          0.12
+        ],
+        "label": "LED Street Luminaire West-South",
+        "phase": "Electrical & Utilities",
+        "status": "completed",
+        "material": "steel"
+      },
+      {
+        "id": "lgt-03",
+        "type": "Highway Lighting Pole NE",
+        "geometry": "cylinder",
+        "position": [
+          16.0,
+          11.5,
+          -4.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          0.12,
+          3.0,
+          0.12
+        ],
+        "label": "LED Street Luminaire East-North",
+        "phase": "Electrical & Utilities",
+        "status": "pending",
+        "material": "steel"
+      },
+      {
+        "id": "lgt-04",
+        "type": "Highway Lighting Pole SE",
+        "geometry": "cylinder",
+        "position": [
+          16.0,
+          11.5,
+          4.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          0.12,
+          3.0,
+          0.12
+        ],
+        "label": "LED Street Luminaire East-South",
+        "phase": "Electrical & Utilities",
+        "status": "pending",
+        "material": "steel"
+      },
+      {
+        "id": "gant-01",
+        "type": "Overhead Sign Gantry Frame",
+        "geometry": "box",
+        "position": [
+          -20.0,
+          12.5,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          0.3,
+          5.5,
+          9.2
+        ],
+        "label": "Directional Display Truss Frame",
+        "phase": "Signage & Toll Systems",
+        "status": "in_progress",
+        "material": "steel"
+      },
+      {
+        "id": "gant-02",
+        "type": "Electronic VMS Signboard",
+        "geometry": "box",
+        "position": [
+          -20.0,
+          13.0,
+          -2.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          0.1,
+          1.8,
+          3.5
+        ],
+        "label": "Variable Message Matrix Display",
+        "phase": "Signage & Toll Systems",
+        "status": "pending",
+        "material": "warning"
+      },
+      {
+        "id": "gant-03",
+        "type": "Traffic Monitoring Sensor Pod",
+        "geometry": "box",
+        "position": [
+          -20.0,
+          11.8,
+          2.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          0.4,
+          0.4,
+          0.6
+        ],
+        "label": "ANPR Toll Optical Camera Module",
+        "phase": "Signage & Toll Systems",
+        "status": "pending",
+        "material": "glass"
+      },
+      {
+        "id": "jnt-01",
+        "type": "Steel Expansion Joint West",
+        "geometry": "box",
+        "position": [
+          -22.0,
+          9.71,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          0.3,
+          0.05,
+          8.5
+        ],
+        "label": "Thermal Expansion Joint Plate West",
+        "phase": "Finishing",
+        "status": "completed",
+        "material": "steel"
+      },
+      {
+        "id": "jnt-02",
+        "type": "Steel Expansion Joint East",
+        "geometry": "box",
+        "position": [
+          22.0,
+          9.71,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          0.3,
+          0.05,
+          8.5
+        ],
+        "label": "Thermal Expansion Joint Plate East",
+        "phase": "Finishing",
+        "status": "pending",
+        "material": "steel"
+      },
+      {
+        "id": "cone-01",
+        "type": "Construction Warning Marker 1",
+        "geometry": "cone",
+        "position": [
+          18.0,
+          9.9,
+          1.5
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          0.35,
+          0.7,
+          0.35
+        ],
+        "label": "Traffic Control Delineator Cone A",
+        "phase": "Safety Installations",
+        "status": "completed",
+        "material": "warning"
+      },
+      {
+        "id": "cone-02",
+        "type": "Construction Warning Marker 2",
+        "geometry": "cone",
+        "position": [
+          19.5,
+          9.9,
+          1.5
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          0.35,
+          0.7,
+          0.35
+        ],
+        "label": "Traffic Control Delineator Cone B",
+        "phase": "Safety Installations",
+        "status": "completed",
+        "material": "warning"
+      },
+      {
+        "id": "cone-03",
+        "type": "Construction Warning Marker 3",
+        "geometry": "cone",
+        "position": [
+          21.0,
+          9.9,
+          1.5
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          0.35,
+          0.7,
+          0.35
+        ],
+        "label": "Traffic Control Delineator Cone C",
+        "phase": "Safety Installations",
+        "status": "completed",
+        "material": "warning"
+      }
+    ],
+    "telemetry": {
+      "flagged_component": "cap-01",
+      "ai_confidence": 0.9,
+      "last_scan_utc": "2026-09-14T10:00:00Z"
+    }
+  },
+  "ROAD-MTHL-09": {
+    "project_id": "ROAD-MTHL-09",
+    "sector": "Roads",
+    "architecture": "Modern Orthotropic Steel Deck Cable-Stayed Marine Viaduct",
+    "metrics": {
+      "total_units": 36,
+      "total_length_m": 80.0
+    },
+    "components": [
+      {
+        "id": "piling-01",
+        "type": "Pile Cap Foundation",
+        "geometry": "box",
+        "position": [
+          -30.0,
+          2.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          8.0,
+          3.0,
+          10.0
+        ],
+        "label": "Marine Pile Cap Pier 1",
+        "phase": "Substructure",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "piling-02",
+        "type": "Pile Cap Foundation",
+        "geometry": "box",
+        "position": [
+          -10.0,
+          2.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          8.0,
+          3.0,
+          10.0
+        ],
+        "label": "Marine Pile Cap Pier 2",
+        "phase": "Substructure",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "piling-03",
+        "type": "Pile Cap Foundation",
+        "geometry": "box",
+        "position": [
+          10.0,
+          2.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          8.0,
+          3.0,
+          10.0
+        ],
+        "label": "Marine Pile Cap Pier 3",
+        "phase": "Substructure",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "piling-04",
+        "type": "Pile Cap Foundation",
+        "geometry": "box",
+        "position": [
+          30.0,
+          2.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          8.0,
+          3.0,
+          10.0
+        ],
+        "label": "Marine Pile Cap Pier 4",
+        "phase": "Substructure",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "pier-col-1a",
+        "type": "Pier Column",
+        "geometry": "cylinder",
+        "position": [
+          -30.0,
+          7.0,
+          -3.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          1.8,
+          8.0,
+          1.8
+        ],
+        "label": "RC Pier Column 1 North",
+        "phase": "Substructure",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "pier-col-1b",
+        "type": "Pier Column",
+        "geometry": "cylinder",
+        "position": [
+          -30.0,
+          7.0,
+          3.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          1.8,
+          8.0,
+          1.8
+        ],
+        "label": "RC Pier Column 1 South",
+        "phase": "Substructure",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "pier-col-2a",
+        "type": "Pier Column",
+        "geometry": "cylinder",
+        "position": [
+          -10.0,
+          7.0,
+          -3.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          2.2,
+          8.0,
+          2.2
+        ],
+        "label": "RC Pier Column 2 North",
+        "phase": "Substructure",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "pier-col-2b",
+        "type": "Pier Column",
+        "geometry": "cylinder",
+        "position": [
+          -10.0,
+          7.0,
+          3.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          2.2,
+          8.0,
+          2.2
+        ],
+        "label": "RC Pier Column 2 South",
+        "phase": "Substructure",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "pier-col-3a",
+        "type": "Pier Column",
+        "geometry": "cylinder",
+        "position": [
+          10.0,
+          7.0,
+          -3.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          2.2,
+          8.0,
+          2.2
+        ],
+        "label": "RC Pier Column 3 North",
+        "phase": "Substructure",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "pier-col-3b",
+        "type": "Pier Column",
+        "geometry": "cylinder",
+        "position": [
+          10.0,
+          7.0,
+          3.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          2.2,
+          8.0,
+          2.2
+        ],
+        "label": "RC Pier Column 3 South",
+        "phase": "Substructure",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "pier-col-4a",
+        "type": "Pier Column",
+        "geometry": "cylinder",
+        "position": [
+          30.0,
+          7.0,
+          -3.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          1.8,
+          8.0,
+          1.8
+        ],
+        "label": "RC Pier Column 4 North",
+        "phase": "Substructure",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "pier-col-4b",
+        "type": "Pier Column",
+        "geometry": "cylinder",
+        "position": [
+          30.0,
+          7.0,
+          3.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          1.8,
+          8.0,
+          1.8
+        ],
+        "label": "RC Pier Column 4 South",
+        "phase": "Substructure",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "pier-cap-01",
+        "type": "Pier Crosshead",
+        "geometry": "box",
+        "position": [
+          -30.0,
+          11.2,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          4.0,
+          1.2,
+          11.0
+        ],
+        "label": "Concrete Crosshead Pier 1",
+        "phase": "Substructure",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "pier-cap-02",
+        "type": "Pier Crosshead",
+        "geometry": "box",
+        "position": [
+          -10.0,
+          11.2,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          4.0,
+          1.2,
+          11.0
+        ],
+        "label": "Concrete Crosshead Pier 2",
+        "phase": "Substructure",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "pier-cap-03",
+        "type": "Pier Crosshead",
+        "geometry": "box",
+        "position": [
+          10.0,
+          11.2,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          4.0,
+          1.2,
+          11.0
+        ],
+        "label": "Concrete Crosshead Pier 3",
+        "phase": "Substructure",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "pier-cap-04",
+        "type": "Pier Crosshead",
+        "geometry": "box",
+        "position": [
+          30.0,
+          11.2,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          4.0,
+          1.2,
+          11.0
+        ],
+        "label": "Concrete Crosshead Pier 4",
+        "phase": "Substructure",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "pylon-base",
+        "type": "Central Pylon Foundation",
+        "geometry": "box",
+        "position": [
+          0.0,
+          5.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          10.0,
+          6.0,
+          12.0
+        ],
+        "label": "Main Tower Pedestal Base",
+        "phase": "Substructure",
+        "status": "completed",
+        "material": "concrete"
+      },
+      {
+        "id": "pylon-leg-left",
+        "type": "Tower Pylon Leg",
+        "geometry": "cylinder",
+        "position": [
+          0.0,
+          24.0,
+          -4.5
+        ],
+        "rotation": [
+          0.15,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          2.2,
+          30.0,
+          2.2
+        ],
+        "label": "Steel Cable Pylon North Leg",
+        "phase": "Superstructure",
+        "status": "in-progress",
+        "material": "steel"
+      },
+      {
+        "id": "pylon-leg-right",
+        "type": "Tower Pylon Leg",
+        "geometry": "cylinder",
+        "position": [
+          0.0,
+          24.0,
+          4.5
+        ],
+        "rotation": [
+          -0.15,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          2.2,
+          30.0,
+          2.2
+        ],
+        "label": "Steel Cable Pylon South Leg",
+        "phase": "Superstructure",
+        "status": "in-progress",
+        "material": "steel"
+      },
+      {
+        "id": "pylon-apex",
+        "type": "Pylon Crossbeam Anchor",
+        "geometry": "box",
+        "position": [
+          0.0,
+          36.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          3.0,
+          2.0,
+          6.0
+        ],
+        "label": "Top Cable Saddle Anchor Block",
+        "phase": "Superstructure",
+        "status": "in-progress",
+        "material": "steel"
+      },
+      {
+        "id": "deck-segment-1",
+        "type": "Orthotropic Deck Box",
+        "geometry": "box",
+        "position": [
+          -30.0,
+          12.5,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          20.0,
+          1.8,
+          10.5
+        ],
+        "label": "Steel Box Girder Span West Outer",
+        "phase": "Superstructure",
+        "status": "completed",
+        "material": "steel"
+      },
+      {
+        "id": "deck-segment-2",
+        "type": "Orthotropic Deck Box",
+        "geometry": "box",
+        "position": [
+          -10.0,
+          12.5,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          20.0,
+          1.8,
+          10.5
+        ],
+        "label": "Steel Box Girder Span West Inner",
+        "phase": "Superstructure",
+        "status": "completed",
+        "material": "steel"
+      },
+      {
+        "id": "deck-segment-3",
+        "type": "Orthotropic Deck Box",
+        "geometry": "box",
+        "position": [
+          0.0,
+          12.5,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          20.0,
+          1.8,
+          10.5
+        ],
+        "label": "Central Navigation Deck Span",
+        "phase": "Superstructure",
+        "status": "in-progress",
+        "material": "steel"
+      },
+      {
+        "id": "deck-segment-4",
+        "type": "Orthotropic Deck Box",
+        "geometry": "box",
+        "position": [
+          10.0,
+          12.5,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          20.0,
+          1.8,
+          10.5
+        ],
+        "label": "Steel Box Girder Span East Inner",
+        "phase": "Superstructure",
+        "status": "pending",
+        "material": "steel"
+      },
+      {
+        "id": "deck-segment-5",
+        "type": "Orthotropic Deck Box",
+        "geometry": "box",
+        "position": [
+          30.0,
+          12.5,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          20.0,
+          1.8,
+          10.5
+        ],
+        "label": "Steel Box Girder Span East Outer",
+        "phase": "Superstructure",
+        "status": "pending",
+        "material": "steel"
+      },
+      {
+        "id": "road-surface-1",
+        "type": "Asphalt Wearing Course",
+        "geometry": "box",
+        "position": [
+          -20.0,
+          13.5,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          40.0,
+          0.2,
+          10.0
+        ],
+        "label": "Mastic Asphalt Pavement Span 1-2",
+        "phase": "Finishing",
+        "status": "in-progress",
+        "material": "asphalt"
+      },
+      {
+        "id": "road-surface-2",
+        "type": "Asphalt Wearing Course",
+        "geometry": "box",
+        "position": [
+          20.0,
+          13.5,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          40.0,
+          0.2,
+          10.0
+        ],
+        "label": "Mastic Asphalt Pavement Span 3-4",
+        "phase": "Finishing",
+        "status": "pending",
+        "material": "asphalt"
+      },
+      {
+        "id": "cable-w1",
+        "type": "Stay Cable",
+        "geometry": "cylinder",
+        "position": [
+          -15.0,
+          24.0,
+          -3.5
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          -0.65
+        ],
+        "dimensions": [
+          0.15,
+          32.0,
+          0.15
+        ],
+        "label": "Stay Cable West Outer (North)",
+        "phase": "Superstructure",
+        "status": "pending",
+        "material": "steel"
+      },
+      {
+        "id": "cable-w2",
+        "type": "Stay Cable",
+        "geometry": "cylinder",
+        "position": [
+          -7.0,
+          21.0,
+          -3.5
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          -0.95
+        ],
+        "dimensions": [
+          0.15,
+          20.0,
+          0.15
+        ],
+        "label": "Stay Cable West Inner (North)",
+        "phase": "Superstructure",
+        "status": "pending",
+        "material": "steel"
+      },
+      {
+        "id": "cable-e1",
+        "type": "Stay Cable",
+        "geometry": "cylinder",
+        "position": [
+          7.0,
+          21.0,
+          -3.5
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.95
+        ],
+        "dimensions": [
+          0.15,
+          20.0,
+          0.15
+        ],
+        "label": "Stay Cable East Inner (North)",
+        "phase": "Superstructure",
+        "status": "pending",
+        "material": "steel"
+      },
+      {
+        "id": "cable-e2",
+        "type": "Stay Cable",
+        "geometry": "cylinder",
+        "position": [
+          15.0,
+          24.0,
+          -3.5
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.65
+        ],
+        "dimensions": [
+          0.15,
+          32.0,
+          0.15
+        ],
+        "label": "Stay Cable East Outer (North)",
+        "phase": "Superstructure",
+        "status": "pending",
+        "material": "steel"
+      },
+      {
+        "id": "barrier-north",
+        "type": "Crash Barrier",
+        "geometry": "box",
+        "position": [
+          0.0,
+          14.1,
+          -4.9
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          80.0,
+          0.8,
+          0.3
+        ],
+        "label": "North Concrete Crash Barrier",
+        "phase": "Finishing",
+        "status": "pending",
+        "material": "concrete"
+      },
+      {
+        "id": "barrier-south",
+        "type": "Crash Barrier",
+        "geometry": "box",
+        "position": [
+          0.0,
+          14.1,
+          4.9
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          80.0,
+          0.8,
+          0.3
+        ],
+        "label": "South Concrete Crash Barrier",
+        "phase": "Finishing",
+        "status": "pending",
+        "material": "concrete"
+      },
+      {
+        "id": "gantry-frame",
+        "type": "Signage Gantry",
+        "geometry": "box",
+        "position": [
+          -22.0,
+          16.5,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          0.8,
+          5.0,
+          10.5
+        ],
+        "label": "Intelligent Traffic Gantry Portal",
+        "phase": "Systems & Equipment",
+        "status": "pending",
+        "material": "steel"
+      },
+      {
+        "id": "vms-board",
+        "type": "VMS Display",
+        "geometry": "box",
+        "position": [
+          -22.0,
+          17.5,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          0.3,
+          1.8,
+          7.0
+        ],
+        "label": "Variable Message Matrix Display",
+        "phase": "Systems & Equipment",
+        "status": "pending",
+        "material": "warning"
+      },
+      {
+        "id": "light-pole-1",
+        "type": "Lighting Column",
+        "geometry": "cylinder",
+        "position": [
+          -35.0,
+          16.5,
+          -4.8
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          0.2,
+          5.5,
+          0.2
+        ],
+        "label": "Smart LED Luminaire Pole 1",
+        "phase": "Systems & Equipment",
+        "status": "pending",
+        "material": "steel"
+      }
+    ],
+    "telemetry": {
+      "flagged_component": "deck-segment-5",
+      "ai_confidence": 0.939,
+      "last_scan_utc": "2026-09-14T10:00:00Z"
+    }
+  }
+}

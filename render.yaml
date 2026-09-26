@@ -1,0 +1,26 @@
+services:
+  # Python ML Microservice
+  - type: web
+    name: infrapulse-ml-api
+    env: python
+    rootDir: ml-service
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+
+  # Node.js Main Backend
+  - type: web
+    name: infrapulse-node-api
+    env: node
+    buildCommand: npm install && npm install -g tsx
+    startCommand: npx tsx server.ts
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: ML_SERVICE_URL
+        fromService:
+          type: web
+          name: infrapulse-ml-api
+          envVarKey: RENDER_EXTERNAL_URL

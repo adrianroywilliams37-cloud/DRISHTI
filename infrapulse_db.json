@@ -1,0 +1,908 @@
+{
+  "users": {
+    "master_admin": {
+      "role": "master",
+      "name": "Prime Node (Master)",
+      "password": "password123",
+      "sector": "ALL",
+      "pinnedProjects": []
+    },
+    "user_nodal_1": {
+      "role": "nodal",
+      "name": "Ramesh Kumar (Nodal Officer)",
+      "password": "nodal",
+      "pinnedProjects": [
+        "RAIL-MAHSR-01"
+      ]
+    },
+    "user_nodal_2": {
+      "role": "nodal",
+      "name": "Nodal Officer - Udhampur-Srinagar-Ba",
+      "password": "nodal",
+      "pinnedProjects": [
+        "RAIL-USBRL-02"
+      ]
+    },
+    "user_nodal_3": {
+      "role": "nodal",
+      "name": "Nodal Officer - Navi Mumbai Internat",
+      "password": "nodal",
+      "pinnedProjects": [
+        "AVI-NMIA-03"
+      ]
+    },
+    "user_nodal_4": {
+      "role": "nodal",
+      "name": "Nodal Officer - Polavaram Irrigation",
+      "password": "nodal",
+      "pinnedProjects": [
+        "WTR-POLA-04"
+      ]
+    },
+    "user_nodal_5": {
+      "role": "nodal",
+      "name": "Nodal Officer - Subansiri Lower Hydr",
+      "password": "nodal",
+      "pinnedProjects": [
+        "PWR-SUB-05"
+      ]
+    },
+    "user_nodal_6": {
+      "role": "nodal",
+      "name": "Nodal Officer - Delhi-Meerut Regiona",
+      "password": "nodal",
+      "pinnedProjects": [
+        "URB-RRTS-06"
+      ]
+    },
+    "user_nodal_7": {
+      "role": "nodal",
+      "name": "Nodal Officer - Kudankulam Nuclear P",
+      "password": "nodal",
+      "pinnedProjects": [
+        "PWR-KUD-07"
+      ]
+    },
+    "user_nodal_8": {
+      "role": "nodal",
+      "name": "Nodal Officer - Eastern Dedicated Fr",
+      "password": "nodal",
+      "pinnedProjects": [
+        "RAIL-EDFC-08"
+      ]
+    },
+    "user_nodal_9": {
+      "role": "nodal",
+      "name": "Nodal Officer - Mumbai Trans Harbour",
+      "password": "nodal",
+      "pinnedProjects": [
+        "ROAD-MTHL-09"
+      ]
+    },
+    "user_nodal_10": {
+      "role": "nodal",
+      "name": "Nodal Officer - Kaleshwaram Lift Irr",
+      "password": "nodal",
+      "pinnedProjects": [
+        "WTR-KLE-10"
+      ]
+    },
+    "user_nodal_11": {
+      "role": "nodal",
+      "name": "Nodal Officer - Bharatmala Pariyojan",
+      "password": "nodal",
+      "pinnedProjects": [
+        "ROAD-BHARAT-11"
+      ]
+    },
+    "user_nodal_12": {
+      "role": "nodal",
+      "name": "Nodal Officer - Zojila Tunnel Projec",
+      "password": "nodal",
+      "pinnedProjects": [
+        "ROAD-ZOJI-12"
+      ]
+    },
+    "user_ministry_1": {
+      "role": "ministry",
+      "name": "Aditi Sharma (Ministry Analyst)",
+      "password": "ministry",
+      "sector": "Railways",
+      "pinnedProjects": []
+    },
+    "user_apex_1": {
+      "role": "apex",
+      "name": "Secretary, Railways",
+      "password": "apex",
+      "sector": "Railways",
+      "pinnedProjects": []
+    }
+  },
+  "projects": [
+    {
+      "id": "RAIL-MAHSR-01",
+      "latitude": 19.8979,
+      "longitude": 72.9324,
+      "name": "Mumbai-Ahmedabad High Speed Rail (MAHSR)",
+      "sector": "Railways",
+      "state": "Maharashtra",
+      "implementing_agency": "NHSRCL",
+      "sanctioned_cost_cr": 108000,
+      "latest_revised_cost_cr": 165000,
+      "sanction_date": "2017-09-14",
+      "original_completion_date": "2023-12-31",
+      "revised_completion_date": "2028-08-31",
+      "physical_progress_pct": 42.5,
+      "financial_progress_pct": 45,
+      "last_reported_month": "Feb 2026",
+      "progress_history": [
+        {
+          "month": "Sep 2025",
+          "physical_pct": 38,
+          "financial_pct": 39.5
+        },
+        {
+          "month": "Oct 2025",
+          "physical_pct": 39.2,
+          "financial_pct": 40.8
+        },
+        {
+          "month": "Nov 2025",
+          "physical_pct": 40.5,
+          "financial_pct": 42
+        },
+        {
+          "month": "Dec 2025",
+          "physical_pct": 41.6,
+          "financial_pct": 43.5
+        },
+        {
+          "month": "Jan 2026",
+          "physical_pct": 42.5,
+          "financial_pct": 45
+        }
+      ],
+      "contractor_track_record_score": 85,
+      "land_acquisition_delay_flag": true,
+      "monsoon_disruption_index": 30,
+      "elapsed_time_pct": 133.8,
+      "costOverrunPct": 52.77777777777778,
+      "costOverrunCr": 57000,
+      "scheduleSlipMonths": 56,
+      "isStagnant": false,
+      "isMismatch": false,
+      "normalizedCostScore": 100,
+      "normalizedSlipScore": 100,
+      "risk_score": 70,
+      "riskBand": "High",
+      "status": "Critical",
+      "risk_reasons": [
+        "52.8% cost overrun (+₹57000 Cr)",
+        "56 months behind schedule"
+      ]
+    },
+    {
+      "id": "RAIL-USBRL-02",
+      "latitude": 33.25,
+      "longitude": 74.9667,
+      "name": "Udhampur-Srinagar-Baramulla Rail Link (USBRL)",
+      "sector": "Railways",
+      "state": "Jammu & Kashmir",
+      "implementing_agency": "Northern Railway / KRCL",
+      "sanctioned_cost_cr": 21650,
+      "latest_revised_cost_cr": 37012,
+      "sanction_date": "2015-06-20",
+      "original_completion_date": "2020-05-31",
+      "revised_completion_date": "2025-11-30",
+      "physical_progress_pct": 95.5,
+      "financial_progress_pct": 98.4,
+      "last_reported_month": "Feb 2026",
+      "progress_history": [
+        {
+          "month": "Sep 2025",
+          "physical_pct": 93,
+          "financial_pct": 96.2
+        },
+        {
+          "month": "Oct 2025",
+          "physical_pct": 93.8,
+          "financial_pct": 97
+        },
+        {
+          "month": "Nov 2025",
+          "physical_pct": 94.5,
+          "financial_pct": 97.8
+        },
+        {
+          "month": "Dec 2025",
+          "physical_pct": 95,
+          "financial_pct": 98.4
+        },
+        {
+          "month": "Jan 2026",
+          "physical_pct": 95.5,
+          "financial_pct": 98.4
+        }
+      ],
+      "contractor_track_record_score": 80,
+      "land_acquisition_delay_flag": false,
+      "monsoon_disruption_index": 95,
+      "elapsed_time_pct": 150,
+      "costOverrunPct": 70.95612009237875,
+      "costOverrunCr": 15362,
+      "scheduleSlipMonths": 66,
+      "isStagnant": false,
+      "isMismatch": false,
+      "normalizedCostScore": 100,
+      "normalizedSlipScore": 100,
+      "risk_score": 70,
+      "riskBand": "High",
+      "status": "Critical",
+      "risk_reasons": [
+        "71.0% cost overrun (+₹15362 Cr)",
+        "66 months behind schedule"
+      ]
+    },
+    {
+      "id": "AVI-NMIA-03",
+      "latitude": 18.9894,
+      "longitude": 73.0694,
+      "name": "Navi Mumbai International Airport (NMIA)",
+      "sector": "Urban Infra",
+      "state": "Maharashtra",
+      "implementing_agency": "CIDCO / Adani Airports",
+      "sanctioned_cost_cr": 16700,
+      "latest_revised_cost_cr": 19600,
+      "sanction_date": "2018-05-15",
+      "original_completion_date": "2021-12-31",
+      "revised_completion_date": "2026-03-31",
+      "physical_progress_pct": 78,
+      "financial_progress_pct": 82.5,
+      "last_reported_month": "Feb 2026",
+      "progress_history": [
+        {
+          "month": "Sep 2025",
+          "physical_pct": 72,
+          "financial_pct": 76.5
+        },
+        {
+          "month": "Oct 2025",
+          "physical_pct": 74.5,
+          "financial_pct": 78
+        },
+        {
+          "month": "Nov 2025",
+          "physical_pct": 76,
+          "financial_pct": 80
+        },
+        {
+          "month": "Dec 2025",
+          "physical_pct": 77.2,
+          "financial_pct": 81.2
+        },
+        {
+          "month": "Jan 2026",
+          "physical_pct": 78,
+          "financial_pct": 82.5
+        }
+      ],
+      "contractor_track_record_score": 82,
+      "land_acquisition_delay_flag": true,
+      "monsoon_disruption_index": 45,
+      "elapsed_time_pct": 150,
+      "costOverrunPct": 17.365269461077844,
+      "costOverrunCr": 2900,
+      "scheduleSlipMonths": 51,
+      "isStagnant": false,
+      "isMismatch": false,
+      "normalizedCostScore": 34.73053892215569,
+      "normalizedSlipScore": 100,
+      "risk_score": 47,
+      "riskBand": "Medium",
+      "status": "Critical",
+      "risk_reasons": [
+        "17.4% cost overrun (+₹2900 Cr)",
+        "51 months behind schedule"
+      ]
+    },
+    {
+      "id": "WTR-POLA-04",
+      "latitude": 17.2536,
+      "longitude": 81.6508,
+      "name": "Polavaram Irrigation Project",
+      "sector": "Water",
+      "state": "Andhra Pradesh",
+      "implementing_agency": "Polavaram Project Authority",
+      "sanctioned_cost_cr": 16010,
+      "latest_revised_cost_cr": 55548,
+      "sanction_date": "2014-03-01",
+      "original_completion_date": "2019-06-30",
+      "revised_completion_date": "2027-06-30",
+      "physical_progress_pct": 69.5,
+      "financial_progress_pct": 72,
+      "last_reported_month": "Feb 2026",
+      "progress_history": [
+        {
+          "month": "Sep 2025",
+          "physical_pct": 68,
+          "financial_pct": 70.5
+        },
+        {
+          "month": "Oct 2025",
+          "physical_pct": 68.5,
+          "financial_pct": 71
+        },
+        {
+          "month": "Nov 2025",
+          "physical_pct": 68.8,
+          "financial_pct": 71.2
+        },
+        {
+          "month": "Dec 2025",
+          "physical_pct": 69.1,
+          "financial_pct": 71.8
+        },
+        {
+          "month": "Jan 2026",
+          "physical_pct": 69.5,
+          "financial_pct": 72
+        }
+      ],
+      "contractor_track_record_score": 55,
+      "land_acquisition_delay_flag": true,
+      "monsoon_disruption_index": 70,
+      "elapsed_time_pct": 150,
+      "costOverrunPct": 246.9581511555278,
+      "costOverrunCr": 39538,
+      "scheduleSlipMonths": 96,
+      "isStagnant": false,
+      "isMismatch": false,
+      "normalizedCostScore": 100,
+      "normalizedSlipScore": 100,
+      "risk_score": 70,
+      "riskBand": "High",
+      "status": "Critical",
+      "risk_reasons": [
+        "247.0% cost overrun (+₹39538 Cr)",
+        "96 months behind schedule"
+      ]
+    },
+    {
+      "id": "PWR-SUB-05",
+      "latitude": 27.5501,
+      "longitude": 94.2568,
+      "name": "Subansiri Lower Hydroelectric Project (2000 MW)",
+      "sector": "Power",
+      "state": "Assam",
+      "implementing_agency": "NHPC",
+      "sanctioned_cost_cr": 6285,
+      "latest_revised_cost_cr": 21247,
+      "sanction_date": "2003-09-09",
+      "original_completion_date": "2010-09-30",
+      "revised_completion_date": "2026-06-30",
+      "physical_progress_pct": 91,
+      "financial_progress_pct": 95,
+      "last_reported_month": "Feb 2026",
+      "progress_history": [
+        {
+          "month": "Sep 2025",
+          "physical_pct": 89,
+          "financial_pct": 92.5
+        },
+        {
+          "month": "Oct 2025",
+          "physical_pct": 89.8,
+          "financial_pct": 93
+        },
+        {
+          "month": "Nov 2025",
+          "physical_pct": 90.5,
+          "financial_pct": 94.2
+        },
+        {
+          "month": "Dec 2025",
+          "physical_pct": 90.8,
+          "financial_pct": 94.8
+        },
+        {
+          "month": "Jan 2026",
+          "physical_pct": 91,
+          "financial_pct": 95
+        }
+      ],
+      "contractor_track_record_score": 75,
+      "land_acquisition_delay_flag": false,
+      "monsoon_disruption_index": 85,
+      "elapsed_time_pct": 150,
+      "costOverrunPct": 238.0588703261734,
+      "costOverrunCr": 14962,
+      "scheduleSlipMonths": 189,
+      "isStagnant": false,
+      "isMismatch": false,
+      "normalizedCostScore": 100,
+      "normalizedSlipScore": 100,
+      "risk_score": 70,
+      "riskBand": "High",
+      "status": "Critical",
+      "risk_reasons": [
+        "238.1% cost overrun (+₹14962 Cr)",
+        "189 months behind schedule"
+      ]
+    },
+    {
+      "id": "URB-RRTS-06",
+      "latitude": 28.6667,
+      "longitude": 77.4167,
+      "name": "Delhi-Meerut Regional Rapid Transit System (RRTS)",
+      "sector": "Urban Infra",
+      "state": "Uttar Pradesh",
+      "implementing_agency": "NCRTC",
+      "sanctioned_cost_cr": 30274,
+      "latest_revised_cost_cr": 30274,
+      "sanction_date": "2019-03-01",
+      "original_completion_date": "2025-06-30",
+      "revised_completion_date": "2025-06-30",
+      "physical_progress_pct": 85,
+      "financial_progress_pct": 82.5,
+      "last_reported_month": "Feb 2026",
+      "progress_history": [
+        {
+          "month": "Sep 2025",
+          "physical_pct": 78,
+          "financial_pct": 75
+        },
+        {
+          "month": "Oct 2025",
+          "physical_pct": 80.5,
+          "financial_pct": 77.2
+        },
+        {
+          "month": "Nov 2025",
+          "physical_pct": 82,
+          "financial_pct": 79.5
+        },
+        {
+          "month": "Dec 2025",
+          "physical_pct": 83.5,
+          "financial_pct": 81
+        },
+        {
+          "month": "Jan 2026",
+          "physical_pct": 85,
+          "financial_pct": 82.5
+        }
+      ],
+      "contractor_track_record_score": 95,
+      "land_acquisition_delay_flag": false,
+      "monsoon_disruption_index": 20,
+      "elapsed_time_pct": 109.9,
+      "costOverrunPct": 0,
+      "costOverrunCr": 0,
+      "scheduleSlipMonths": 0,
+      "isStagnant": false,
+      "isMismatch": false,
+      "normalizedCostScore": 0,
+      "normalizedSlipScore": 0,
+      "risk_score": 0,
+      "riskBand": "Low",
+      "status": "On Track",
+      "risk_reasons": [
+        "All physical & financial milestones executing within sanctioned parameters"
+      ]
+    },
+    {
+      "id": "PWR-KUD-07",
+      "latitude": 8.1678,
+      "longitude": 77.7126,
+      "name": "Kudankulam Nuclear Power Project (Units 3 & 4)",
+      "sector": "Power",
+      "state": "Tamil Nadu",
+      "implementing_agency": "NPCIL",
+      "sanctioned_cost_cr": 39849,
+      "latest_revised_cost_cr": 49500,
+      "sanction_date": "2016-04-18",
+      "original_completion_date": "2023-03-31",
+      "revised_completion_date": "2027-03-31",
+      "physical_progress_pct": 74.5,
+      "financial_progress_pct": 81.2,
+      "last_reported_month": "Feb 2026",
+      "progress_history": [
+        {
+          "month": "Sep 2025",
+          "physical_pct": 71,
+          "financial_pct": 78
+        },
+        {
+          "month": "Oct 2025",
+          "physical_pct": 72.2,
+          "financial_pct": 79
+        },
+        {
+          "month": "Nov 2025",
+          "physical_pct": 73,
+          "financial_pct": 79.8
+        },
+        {
+          "month": "Dec 2025",
+          "physical_pct": 73.8,
+          "financial_pct": 80.5
+        },
+        {
+          "month": "Jan 2026",
+          "physical_pct": 74.5,
+          "financial_pct": 81.2
+        }
+      ],
+      "contractor_track_record_score": 70,
+      "land_acquisition_delay_flag": false,
+      "monsoon_disruption_index": 10,
+      "elapsed_time_pct": 141.4,
+      "costOverrunPct": 24.218926447338703,
+      "costOverrunCr": 9651,
+      "scheduleSlipMonths": 48,
+      "isStagnant": false,
+      "isMismatch": false,
+      "normalizedCostScore": 48.437852894677405,
+      "normalizedSlipScore": 100,
+      "risk_score": 52,
+      "riskBand": "Medium",
+      "status": "Critical",
+      "risk_reasons": [
+        "24.2% cost overrun (+₹9651 Cr)",
+        "48 months behind schedule"
+      ]
+    },
+    {
+      "id": "RAIL-EDFC-08",
+      "latitude": 25.3216,
+      "longitude": 83.0039,
+      "name": "Eastern Dedicated Freight Corridor (EDFC)",
+      "sector": "Railways",
+      "state": "Uttar Pradesh",
+      "implementing_agency": "DFCCIL",
+      "sanctioned_cost_cr": 28181,
+      "latest_revised_cost_cr": 35500,
+      "sanction_date": "2008-05-15",
+      "original_completion_date": "2015-03-31",
+      "revised_completion_date": "2025-12-31",
+      "physical_progress_pct": 98,
+      "financial_progress_pct": 99,
+      "last_reported_month": "Feb 2026",
+      "progress_history": [
+        {
+          "month": "Sep 2025",
+          "physical_pct": 96,
+          "financial_pct": 97
+        },
+        {
+          "month": "Oct 2025",
+          "physical_pct": 96.8,
+          "financial_pct": 97.8
+        },
+        {
+          "month": "Nov 2025",
+          "physical_pct": 97.2,
+          "financial_pct": 98.2
+        },
+        {
+          "month": "Dec 2025",
+          "physical_pct": 97.8,
+          "financial_pct": 98.8
+        },
+        {
+          "month": "Jan 2026",
+          "physical_pct": 98,
+          "financial_pct": 99
+        }
+      ],
+      "contractor_track_record_score": 65,
+      "land_acquisition_delay_flag": true,
+      "monsoon_disruption_index": 40,
+      "elapsed_time_pct": 150,
+      "costOverrunPct": 25.971399169653314,
+      "costOverrunCr": 7319,
+      "scheduleSlipMonths": 129,
+      "isStagnant": false,
+      "isMismatch": false,
+      "normalizedCostScore": 51.94279833930663,
+      "normalizedSlipScore": 100,
+      "risk_score": 53,
+      "riskBand": "Medium",
+      "status": "Critical",
+      "risk_reasons": [
+        "26.0% cost overrun (+₹7319 Cr)",
+        "129 months behind schedule"
+      ]
+    },
+    {
+      "id": "ROAD-MTHL-09",
+      "latitude": 18.9264,
+      "longitude": 72.9377,
+      "name": "Mumbai Trans Harbour Link (Atal Setu)",
+      "sector": "Roads",
+      "state": "Maharashtra",
+      "implementing_agency": "MMRDA",
+      "sanctioned_cost_cr": 17843,
+      "latest_revised_cost_cr": 21200,
+      "sanction_date": "2017-10-18",
+      "original_completion_date": "2022-09-30",
+      "revised_completion_date": "2024-01-12",
+      "physical_progress_pct": 100,
+      "financial_progress_pct": 100,
+      "last_reported_month": "Feb 2026",
+      "progress_history": [
+        {
+          "month": "Sep 2025",
+          "physical_pct": 100,
+          "financial_pct": 100
+        },
+        {
+          "month": "Oct 2025",
+          "physical_pct": 100,
+          "financial_pct": 100
+        },
+        {
+          "month": "Nov 2025",
+          "physical_pct": 100,
+          "financial_pct": 100
+        },
+        {
+          "month": "Dec 2025",
+          "physical_pct": 100,
+          "financial_pct": 100
+        },
+        {
+          "month": "Jan 2026",
+          "physical_pct": 100,
+          "financial_pct": 100
+        }
+      ],
+      "contractor_track_record_score": 90,
+      "land_acquisition_delay_flag": false,
+      "monsoon_disruption_index": 50,
+      "elapsed_time_pct": 150,
+      "costOverrunPct": 18.814100767808103,
+      "costOverrunCr": 3357,
+      "scheduleSlipMonths": 15,
+      "isStagnant": true,
+      "isMismatch": false,
+      "normalizedCostScore": 37.628201535616206,
+      "normalizedSlipScore": 41.66666666666667,
+      "risk_score": 43,
+      "riskBand": "Medium",
+      "status": "Delayed",
+      "risk_reasons": [
+        "18.8% cost overrun (+₹3357 Cr)",
+        "15 months behind schedule",
+        "Physical progress stalled across last 2 reporting periods"
+      ]
+    },
+    {
+      "id": "WTR-KLE-10",
+      "latitude": 18.6657,
+      "longitude": 79.919,
+      "name": "Kaleshwaram Lift Irrigation Project",
+      "sector": "Water",
+      "state": "Telangana",
+      "implementing_agency": "Irrigation Dept",
+      "sanctioned_cost_cr": 80190,
+      "latest_revised_cost_cr": 110000,
+      "sanction_date": "2016-05-02",
+      "original_completion_date": "2020-03-31",
+      "revised_completion_date": "2026-12-31",
+      "physical_progress_pct": 82,
+      "financial_progress_pct": 85,
+      "last_reported_month": "Feb 2026",
+      "progress_history": [
+        {
+          "month": "Sep 2025",
+          "physical_pct": 81,
+          "financial_pct": 84
+        },
+        {
+          "month": "Oct 2025",
+          "physical_pct": 81,
+          "financial_pct": 84.2
+        },
+        {
+          "month": "Nov 2025",
+          "physical_pct": 81.5,
+          "financial_pct": 84.5
+        },
+        {
+          "month": "Dec 2025",
+          "physical_pct": 81.8,
+          "financial_pct": 84.8
+        },
+        {
+          "month": "Jan 2026",
+          "physical_pct": 82,
+          "financial_pct": 85
+        }
+      ],
+      "isolation_forest_payload": {
+        "project_id": "WTR-KLE-10",
+        "data_timestamp": "2026-09-12T10:00:00Z",
+        "analysis_summary": {
+          "current_variance": -18.2,
+          "fiscal_trajectory": "Severe Overrun",
+          "ai_risk_score": "Critical"
+        },
+        "visualization_input": {
+          "structural_variance_map": [
+            {
+              "component_id": "pump_house_kannepally",
+              "variance_score": -0.92,
+              "render_status": "BlinkingRed"
+            }
+          ],
+          "cascading_delay_prediction": "Forecast: Engineering redesign required due to structural subsidence."
+        },
+        "analytics_inbox": [
+          {
+            "indicator_id": "structural_integrity_risk",
+            "value": 95,
+            "anomaly_flag": true,
+            "detail": "Isolation Forest flagged massive deviation in structural integrity reports corresponding with halt in fund utilization."
+          }
+        ]
+      },
+      "contractor_track_record_score": 50,
+      "land_acquisition_delay_flag": true,
+      "monsoon_disruption_index": 80,
+      "elapsed_time_pct": 150,
+      "costOverrunPct": 37.174211248285324,
+      "costOverrunCr": 29810,
+      "scheduleSlipMonths": 81,
+      "isStagnant": false,
+      "isMismatch": false,
+      "normalizedCostScore": 74.34842249657065,
+      "normalizedSlipScore": 100,
+      "risk_score": 61,
+      "riskBand": "High",
+      "status": "Critical",
+      "risk_reasons": [
+        "37.2% cost overrun (+₹29810 Cr)",
+        "81 months behind schedule"
+      ]
+    },
+    {
+      "id": "ROAD-BHARAT-11",
+      "latitude": 22.9868,
+      "longitude": 87.855,
+      "name": "Bharatmala Pariyojana (Phase 1)",
+      "sector": "Roads",
+      "state": "National",
+      "implementing_agency": "NHAI / MoRTH",
+      "sanctioned_cost_cr": 535000,
+      "latest_revised_cost_cr": 1063000,
+      "sanction_date": "2017-10-24",
+      "original_completion_date": "2022-03-31",
+      "revised_completion_date": "2028-03-31",
+      "physical_progress_pct": 55,
+      "financial_progress_pct": 60.5,
+      "last_reported_month": "Feb 2026",
+      "progress_history": [
+        {
+          "month": "Sep 2025",
+          "physical_pct": 50,
+          "financial_pct": 55
+        },
+        {
+          "month": "Oct 2025",
+          "physical_pct": 51.5,
+          "financial_pct": 56.5
+        },
+        {
+          "month": "Nov 2025",
+          "physical_pct": 53,
+          "financial_pct": 58
+        },
+        {
+          "month": "Dec 2025",
+          "physical_pct": 54,
+          "financial_pct": 59.2
+        },
+        {
+          "month": "Jan 2026",
+          "physical_pct": 55,
+          "financial_pct": 60.5
+        }
+      ],
+      "contractor_track_record_score": 60,
+      "land_acquisition_delay_flag": true,
+      "monsoon_disruption_index": 60,
+      "elapsed_time_pct": 150,
+      "costOverrunPct": 98.69158878504672,
+      "costOverrunCr": 528000,
+      "scheduleSlipMonths": 72,
+      "isStagnant": false,
+      "isMismatch": false,
+      "normalizedCostScore": 100,
+      "normalizedSlipScore": 100,
+      "risk_score": 70,
+      "riskBand": "High",
+      "status": "Critical",
+      "risk_reasons": [
+        "98.7% cost overrun (+₹528000 Cr)",
+        "72 months behind schedule"
+      ]
+    },
+    {
+      "id": "ROAD-ZOJI-12",
+      "latitude": 34.2818,
+      "longitude": 75.4665,
+      "name": "Zojila Tunnel Project",
+      "sector": "Roads",
+      "state": "Jammu & Kashmir",
+      "implementing_agency": "NHIDCL",
+      "sanctioned_cost_cr": 6800,
+      "latest_revised_cost_cr": 8308,
+      "sanction_date": "2018-01-03",
+      "original_completion_date": "2026-10-31",
+      "revised_completion_date": "2027-12-31",
+      "physical_progress_pct": 54,
+      "financial_progress_pct": 58,
+      "last_reported_month": "Feb 2026",
+      "progress_history": [
+        {
+          "month": "Sep 2025",
+          "physical_pct": 48,
+          "financial_pct": 52
+        },
+        {
+          "month": "Oct 2025",
+          "physical_pct": 49.5,
+          "financial_pct": 53.5
+        },
+        {
+          "month": "Nov 2025",
+          "physical_pct": 51,
+          "financial_pct": 55
+        },
+        {
+          "month": "Dec 2025",
+          "physical_pct": 52.5,
+          "financial_pct": 56.5
+        },
+        {
+          "month": "Jan 2026",
+          "physical_pct": 54,
+          "financial_pct": 58
+        }
+      ],
+      "contractor_track_record_score": 75,
+      "land_acquisition_delay_flag": false,
+      "monsoon_disruption_index": 90,
+      "elapsed_time_pct": 92,
+      "costOverrunPct": 22.176470588235293,
+      "costOverrunCr": 1508,
+      "scheduleSlipMonths": 14,
+      "isStagnant": false,
+      "isMismatch": false,
+      "normalizedCostScore": 44.35294117647059,
+      "normalizedSlipScore": 38.88888888888889,
+      "risk_score": 29,
+      "riskBand": "Low",
+      "status": "Delayed",
+      "risk_reasons": [
+        "22.2% cost overrun (+₹1508 Cr)",
+        "14 months behind schedule"
+      ]
+    },
+    {
+      "id": "rail-test-101",
+      "name": "mubattan railway",
+      "sector": "encore-3",
+      "state": "tamil nadu",
+      "sanctioned_cost_cr": 300,
+      "original_completion_date": "2035-06-07",
+      "physical_progress_pct": 0,
+      "financial_progress_pct": 0,
+      "latest_revised_cost_cr": 300,
+      "revised_completion_date": "2035-06-07",
+      "status": "Active",
+      "last_reported_month": "2026-09"
+    }
+  ]
+}

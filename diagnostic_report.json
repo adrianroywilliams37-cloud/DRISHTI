@@ -1,0 +1,14 @@
+{
+    "timestamp": "2026-09-12T17:43:55.047985+00:00",
+    "samples_tested": 2000,
+    "classification": {
+        "accuracy": 0.997,
+        "precision": 0.9901960784313726,
+        "recall": 0.9901960784313726,
+        "f1_score": 0.9901960784313726
+    },
+    "regression": {
+        "mae_months": 2.638095466557895,
+        "rmse_months": 7.334595473816339
+    }
+}
