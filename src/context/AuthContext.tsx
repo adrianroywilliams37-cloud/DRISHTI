@@ -42,20 +42,40 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, [user]);
 
   const login = async (userId: string, password: string) => {
-    const response = await fetch('/api/login', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ userId, password })
-    });
+    // Vercel deployment client-side authentication mock
+    // In a real app this would hit the API gateway or Supabase Auth directly
     
-    if (response.ok) {
-      const data = await response.json();
-      setUser(data);
-    } else {
-      throw new Error('Invalid credentials');
+    // Nodal officers
+    if (userId.startsWith('user_nodal_') && password === 'nodal') {
+      setUser({
+        id: userId,
+        role: 'nodal',
+        name: `Nodal Officer ${userId.split('_').pop()}`,
+        pinnedProjects: []
+      });
+      return;
     }
+
+    // Ministry/Apex/Master
+    const credentials: Record<string, any> = {
+      'master_admin': { role: 'master', name: 'Master Admin', pass: 'password123' },
+      'user_ministry_1': { role: 'ministry', name: 'Aditi Sharma (Ministry Analyst)', sector: 'Railways', pass: 'ministry' },
+      'user_apex_1': { role: 'apex', name: 'Secretary, Railways', sector: 'Railways', pass: 'apex' }
+    };
+
+    const validUser = credentials[userId];
+    if (validUser && validUser.pass === password) {
+      setUser({
+        id: userId,
+        role: validUser.role,
+        name: validUser.name,
+        sector: validUser.sector,
+        pinnedProjects: []
+      });
+      return;
+    }
+
+    throw new Error('Invalid credentials');
   };
 
   const logout = () => {
