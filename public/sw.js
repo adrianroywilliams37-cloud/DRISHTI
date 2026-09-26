@@ -14,7 +14,7 @@ const STORE_NAME = 'telemetry_outbox';
 // The Supabase/backend endpoint for offline sync
 const SYNC_ENDPOINT = '/api/sync-offline';
 
-const CACHE_NAME = 'drishti-shell-v1';
+const CACHE_NAME = 'drishti-shell-v2';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
