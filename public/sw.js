@@ -14,7 +14,7 @@ const STORE_NAME = 'telemetry_outbox';
 // The Supabase/backend endpoint for offline sync
 const SYNC_ENDPOINT = '/api/sync-offline';
 
-const CACHE_NAME = 'drishti-shell-v2';
+const CACHE_NAME = 'drishti-shell-v3';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
@@ -48,18 +48,45 @@ self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
   if (event.request.url.includes('/api/')) return; // let APIs fall through or fail
 
+  // Use Network-First strategy for HTML navigation requests
+  if (event.request.mode === 'navigate') {
+    event.respondWith(
+      fetch(event.request)
+        .then((networkResponse) => {
+          // Update the cache with the freshest index.html
+          const responseClone = networkResponse.clone();
+          caches.open(CACHE_NAME).then((cache) => {
+            cache.put(event.request, responseClone);
+          });
+          return networkResponse;
+        })
+        .catch(() => {
+          // Offline fallback
+          return caches.match(event.request).then((cachedResponse) => {
+            return cachedResponse || caches.match('/index.html');
+          });
+        })
+    );
+    return;
+  }
+
+  // Cache-First strategy for static assets (JS, CSS, images)
   event.respondWith(
     caches.match(event.request).then((cachedResponse) => {
       if (cachedResponse) return cachedResponse;
       
       return fetch(event.request).then((networkResponse) => {
-        // Optionally cache new dynamic assets here if needed
-        return networkResponse;
-      }).catch(() => {
-        // Offline fallback for navigation
-        if (event.request.mode === 'navigate') {
-          return caches.match('/index.html');
+        // Cache new dynamic assets automatically to prevent 404s later
+        if (networkResponse && networkResponse.status === 200) {
+          const responseClone = networkResponse.clone();
+          caches.open(CACHE_NAME).then((cache) => {
+            cache.put(event.request, responseClone);
+          });
         }
+        return networkResponse;
+      }).catch((error) => {
+        console.error('[DRISHTI SW] Fetch failed for static asset:', event.request.url);
+        throw error;
       });
     })
   );
