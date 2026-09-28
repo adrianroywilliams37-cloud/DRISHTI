@@ -8,7 +8,7 @@ import { CacheManager } from "./src/data/db";
 dotenv.config();
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Zod Schemas
 const LoginSchema = z.object({
