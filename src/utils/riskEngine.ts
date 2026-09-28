@@ -225,7 +225,7 @@ export function enrichProject(raw: any): Project {
 export async function enrichProjectWithAI(raw: any): Promise<Project> {
   const baseProject = enrichProject(raw);
   try {
-    const response = await fetch('http://localhost:5001/api/predict', {
+    const response = await fetch('/api/predict-risk', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(baseProject)

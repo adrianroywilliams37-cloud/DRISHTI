@@ -105,7 +105,7 @@ export function SmartIngestionForm({ projectId, officerId = 'OFFICER-001' }: Sma
       formData.append('file', uploadedFile);
       formData.append('project_id', projectId);
 
-      const response = await fetch('http://localhost:8000/extract-dpr', {
+      const response = await fetch('/extract-dpr', {
         method: 'POST',
         body: formData,
       });

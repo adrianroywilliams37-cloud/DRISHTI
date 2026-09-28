@@ -347,7 +347,7 @@ export function DigitalTwinCommandCenter({ projectId = 'PROJ-2024-MH-0042', proj
         if (projectId.includes("WTR")) sector = "Water";
         if (projectId.includes("URB")) sector = "Urban Infra";
 
-        const res = await fetch(`http://localhost:8000/api/v1/spatial-twin/${projectId}?sector=${sector}&completion_pct=${completionPct}`);
+        const res = await fetch(`/api/v1/spatial-twin/${projectId}?sector=${sector}&completion_pct=${completionPct}`);
         if (res.ok) {
           const topo = await res.json();
           setTopology(topo);
