@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
-import { Shield, AlertCircle, KeyRound } from 'lucide-react';
+import { Shield, AlertCircle, KeyRound, Eye, EyeOff } from 'lucide-react';
 
 export function LoginView() {
   const [step, setStep] = useState<1 | 2>(1);
   const [loginId, setLoginId] = useState('');
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
   const [otp, setOtp] = useState('');
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -97,16 +98,27 @@ export function LoginView() {
                 <label htmlFor="password" className="block text-sm font-medium text-slate-900">
                   Secure Password
                 </label>
-                <div className="mt-1">
+                <div className="mt-1 relative">
                   <input
                     id="password"
                     name="password"
-                    type="password"
+                    type={showPassword ? "text" : "password"}
                     required
                     value={password}
                     onChange={(e) => { setPassword(e.target.value); setError(''); }}
-                    className="appearance-none block w-full px-3 py-2 border border-slate-300 rounded-sm shadow-sm placeholder-slate-400 focus:outline-none focus:ring-slate-900 focus:border-slate-900 sm:text-sm"
+                    className="appearance-none block w-full px-3 py-2 border border-slate-300 rounded-sm shadow-sm placeholder-slate-400 focus:outline-none focus:ring-slate-900 focus:border-slate-900 sm:text-sm pr-10"
                   />
+                  <button
+                    type="button"
+                    onClick={() => setShowPassword(!showPassword)}
+                    className="absolute inset-y-0 right-0 pr-3 flex items-center text-slate-400 hover:text-slate-600 focus:outline-none"
+                  >
+                    {showPassword ? (
+                      <EyeOff className="h-5 w-5" aria-hidden="true" />
+                    ) : (
+                      <Eye className="h-5 w-5" aria-hidden="true" />
+                    )}
+                  </button>
                 </div>
               </div>
 
