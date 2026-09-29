@@ -114,7 +114,6 @@ export const AiQueryChatDrawer: React.FC<AiQueryChatDrawerProps> = ({
     const file = e.target.files?.[0];
     if (!file) return;
 
-    // Simulate upload and NLP parse
     setIsUploading(true);
     setLoading(true);
     const userMsg: ChatMessage = {
@@ -126,14 +125,17 @@ export const AiQueryChatDrawer: React.FC<AiQueryChatDrawerProps> = ({
     setMessages((prev) => [...prev, userMsg]);
 
     try {
-      // We simulate reading the file text since it's a PDF.
-      // In production, we'd use a PDF parser. We'll send a dummy payload that the backend will parse or mock.
-      const simulatedDocumentText = "This is a dummy text of the PDF containing milestone data for Gemini to parse.";
+      let documentText = "This is a dummy text of the PDF containing milestone data for Gemini to parse.";
+      
+      // If it's a text file, actually read its contents so the demo works!
+      if (file.name.endsWith('.txt') || file.type === 'text/plain') {
+        documentText = await file.text();
+      }
       
       const response = await fetch("/api/gemini/parse-dpr", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ documentText: simulatedDocumentText })
+        body: JSON.stringify({ documentText })
       });
 
       if (!response.ok) throw new Error("Failed to parse document");
