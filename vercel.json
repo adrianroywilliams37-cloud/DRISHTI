@@ -1,6 +1,5 @@
 {
   "framework": "vite",
-  "cleanUrls": true,
   "headers": [
     {
       "source": "/(.*)",
@@ -22,10 +21,6 @@
     }
   ],
   "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "/api/$1"
-    },
     {
       "source": "/(.*)",
       "destination": "/index.html"
