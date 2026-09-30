@@ -2,7 +2,10 @@ import fs from 'fs';
 import path from 'path';
 import { seedProjects } from './seedProjects';
 
-const DB_PATH = path.join(process.cwd(), 'infrapulse_db.json');
+import os from 'os';
+
+// Use /tmp for serverless environments (Vercel) to avoid EACCES permission denied errors when writing
+const DB_PATH = process.env.VERCEL ? path.join(os.tmpdir(), 'infrapulse_db.json') : path.join(process.cwd(), 'infrapulse_db.json');
 
 // Interface definition for our simple DB
 interface DatabaseSchema {
@@ -143,7 +146,19 @@ export class CacheManager {
       console.error('Failed to read db file, falling back to default', error);
     }
     
-    // If we reach here, either it doesn't exist or we failed to parse it
+    // If we reach here, either it doesn't exist or we failed to parse it.
+    // Try to fallback to reading from process.cwd() if we are in /tmp
+    if (process.env.VERCEL) {
+       try {
+         const originalPath = path.join(process.cwd(), 'infrapulse_db.json');
+         if (fs.existsSync(originalPath)) {
+            const data = fs.readFileSync(originalPath, 'utf-8');
+            return JSON.parse(data);
+         }
+       } catch (e) {
+         console.error('Failed to read fallback original db file', e);
+       }
+    }
     this.saveDatabase(DEFAULT_DB);
     return DEFAULT_DB;
   }

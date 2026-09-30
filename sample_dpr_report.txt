@@ -1,0 +1,26 @@
+DETAILED PROJECT REPORT (DPR)
+=====================================
+PROJECT TITLE: High-Speed Freight Corridor - Western Sector (Phase II)
+AGENCY: Dedicated Freight Corridor Corporation of India Limited (DFCCIL)
+DATE: September 2026
+-------------------------------------
+
+1. FINANCIAL OVERVIEW
+The sanctioned budget for the High-Speed Freight Corridor - Western Sector (Phase II) has been finalized. The Total Budget allocated for this phase is ₹ 14,250 Cr. This includes land acquisition, civil works, electrification, and signalling infrastructure.
+
+2. PROJECT TIMELINE & KEY MILESTONES
+The project is scheduled for completion over a 36-month period. The critical path involves several key milestones:
+- Environmental Clearance & Land Acquisition Complete (Q1 2027)
+- Completion of Earthworks and Track Bed Formation (Q4 2027)
+- Foundation Casting and Bridge Erection (Q2 2028)
+- Overhead Electrification (OHE) and Signalling Commissioning (Q1 2029)
+- Trial Runs and Final Handover (Q3 2029)
+
+3. CONTRACTOR OBLIGATIONS & PENALTIES
+The EPC contractor is strictly bound by the following obligations to prevent cost and schedule overruns:
+- The contractor must maintain a minimum physical progress of 5% per quarter during the civil works phase.
+- Penalty of 0.75% of the contract value per week for schedule slippage beyond a 30-day grace period, capped at a maximum of 10% of the total contract value.
+- The contractor is responsible for resolving minor local ROW (Right of Way) disputes without claiming force majeure, unless state intervention is officially delayed by more than 90 days.
+
+4. RISK MANAGEMENT
+Primary risks identified include monsoon disruptions in the coastal segments and potential delays in utility shifting. A contingency fund of ₹ 450 Cr has been reserved to address unmapped underground utilities discovered during excavation.
