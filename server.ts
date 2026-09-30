@@ -3,7 +3,7 @@ import path from "path";
 import { GoogleGenAI } from "@google/genai";
 import dotenv from "dotenv";
 import { z } from "zod";
-import { CacheManager } from "./src/data/db";
+import { CacheManager } from "./src/data/db.js";
 import multer from "multer";
 import os from "os";
 
