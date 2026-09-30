@@ -7,7 +7,7 @@ import {
   DriverCorrelation,
   BeforeAfterComparison,
   RiskBand,
-} from "../types";
+} from "../types.js";
 
 /**
  * Solve linear system A * x = b using Gaussian elimination with partial pivoting.

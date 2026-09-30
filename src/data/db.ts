@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { seedProjects } from './seedProjects';
+import { seedProjects } from './seedProjects.js';
 
 import os from 'os';
 

@@ -1,5 +1,5 @@
-import { Project } from "../types";
-import { enrichProject } from "../utils/riskEngine";
+import { Project } from "../types.js";
+import { enrichProject } from "../utils/riskEngine.js";
 
 const rawSeedProjects = [
   {

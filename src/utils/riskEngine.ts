@@ -1,4 +1,4 @@
-import { Project, ProgressHistoryItem, RiskBand, ProjectStatus } from "../types";
+import { Project, ProgressHistoryItem, RiskBand, ProjectStatus } from "../types.js";
 
 export function calculateMonthsBetween(d1Str: string, d2Str: string): number {
   try {
