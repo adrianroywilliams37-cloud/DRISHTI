@@ -424,7 +424,7 @@ REQUIREMENTS:
 Keep it strictly under 130 words. Do not use asterisks or bullet points; write cohesive prose.`;
 
     const response = await ai.models.generateContent({
-      model: "gemini-2.5-flash",
+      model: "gemini-3.8-flash",
       contents: prompt,
       config: {
         systemInstruction: "You are an expert infrastructure economist and MoSPI project monitoring advisor.",
@@ -507,7 +507,7 @@ Instructions:
     }));
 
     const chat = ai.chats.create({
-      model: "gemini-2.5-flash",
+      model: "gemini-3.8-flash",
       config: {
         systemInstruction: systemPrompt,
         temperature: 0.2,
@@ -561,7 +561,7 @@ Requirements:
 - Tone: Formal, objective, concise, suitable for senior MoSPI leadership.`;
 
     const response = await ai.models.generateContent({
-      model: "gemini-2.5-flash",
+      model: "gemini-3.8-flash",
       contents: prompt,
       config: {
         systemInstruction: "You are a senior statistical auditor for government infrastructure evaluations.",
@@ -789,7 +789,7 @@ ${documentText.substring(0, 5000)} // Truncating to avoid massive payloads for t
 `;
 
     const response = await ai.models.generateContent({
-      model: "gemini-2.5-flash",
+      model: "gemini-3.8-flash",
       contents: prompt,
       config: {
         systemInstruction: "You strictly output valid JSON.",
