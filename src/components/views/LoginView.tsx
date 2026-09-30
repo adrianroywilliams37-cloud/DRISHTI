@@ -210,6 +210,28 @@ export function LoginView() {
           <div className="mt-6 text-center text-xs text-slate-500 font-mono">
             Unauthorised access is strictly prohibited.
           </div>
+          
+          <div className="mt-8 pt-6 border-t border-slate-200">
+            <h4 className="text-sm font-medium text-slate-900 mb-4">Demo Credentials (For Testing)</h4>
+            <div className="bg-slate-50 rounded p-3 text-xs font-mono space-y-2 border border-slate-200">
+              <div className="flex justify-between">
+                <span className="text-slate-500">Nodal Officer:</span>
+                <span className="font-semibold text-slate-700">user_nodal_1 / nodal</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-slate-500">Ministry Analyst:</span>
+                <span className="font-semibold text-slate-700">user_ministry_1 / ministry</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-slate-500">Apex Authority:</span>
+                <span className="font-semibold text-slate-700">user_apex_1 / apex</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-slate-500">Master Admin:</span>
+                <span className="font-semibold text-slate-700">master_admin / password123</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
