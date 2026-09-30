@@ -100,6 +100,43 @@ const EvaluateBidderSchema = z.object({
 
 app.use(express.json({ limit: "10mb" }));
 
+const multer = require('multer');
+const os = require('os');
+const upload = multer({ dest: os.tmpdir() });
+
+// Extract DPR mock
+app.post('/extract-dpr', upload.single('file'), (req, res) => {
+  // Simulate 3 second AI processing time
+  setTimeout(() => {
+    res.json({
+      extracted_metrics: {
+        daily_physical_progress_pct: 12.5,
+        financial_expenditure_pct: 15.0,
+        labor_headcount: 450
+      },
+      bottlenecks: [
+        {
+          interrogation_required: true,
+          raw_text: "Delay in acquiring 5 hectares of land in sector 4",
+          ui_prompt: "Is the land acquisition issue related to state government clearance or local resistance?",
+          required_dropdown_categories: [
+            "State Government Delay",
+            "Local Resistance",
+            "Environmental Clearance",
+            "Court Injunction"
+          ]
+        },
+        {
+          interrogation_required: false,
+          raw_text: "Minor supply chain delays for steel",
+          ui_prompt: "",
+          required_dropdown_categories: []
+        }
+      ]
+    });
+  }, 3000);
+});
+
 // Auth Login Endpoint
 app.post("/api/login", (req: any, res) => {
   const result = LoginSchema.safeParse(req.body);
