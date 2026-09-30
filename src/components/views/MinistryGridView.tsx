@@ -23,7 +23,7 @@ interface MinistryGridViewProps {
   projects: Project[];
 }
 
-const sectorConfig: Record<string, { icon: React.ElementType, title: string, description: string, color: string, bg: string }> = {
+const sectorConfig: Record<string, { icon: React.ElementType<any>, title: string, description: string, color: string, bg: string }> = {
   'Railways': { icon: Train, title: 'Ministry of Railways', description: 'National rail network and transit systems', color: 'text-slate-800', bg: 'bg-slate-100' },
   'Roads': { icon: Car, title: 'Ministry of Road Transport', description: 'Highways, expressways, and road infrastructure', color: 'text-slate-800', bg: 'bg-slate-100' },
   'Power': { icon: Zap, title: 'Ministry of Power', description: 'Energy generation and transmission grids', color: 'text-slate-800', bg: 'bg-slate-100' },

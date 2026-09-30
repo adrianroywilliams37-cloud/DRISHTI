@@ -935,7 +935,7 @@ async function startServer() {
     });
   }
 
-  app.listen(PORT, "0.0.0.0", () => {
+  app.listen(Number(PORT), "0.0.0.0", () => {
     console.log(`Drishti server running on http://localhost:${PORT}`);
   });
 }

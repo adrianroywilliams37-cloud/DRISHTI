@@ -8,12 +8,14 @@ interface User {
   name: string;
   sector?: string;
   pinnedProjects?: string[];
+  sicn?: string;
 }
 
 interface AuthContextType {
   user: User | null;
   login: (userId: string, password: string) => Promise<void>;
   logout: () => void;
+  switchRole?: (role: UserRole) => void;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
