@@ -71,12 +71,18 @@ export const AiQueryChatDrawer: React.FC<AiQueryChatDrawerProps> = ({
     setLoading(true);
 
     try {
+      // Exclude the initial greeting (Gemini requires history to start with 'user')
+      // and exclude the current message (since it's sent in the 'message' field)
+      const chatHistory = messages
+        .filter(m => m.id !== "initial-greeting" && m.id !== userMsg.id)
+        .slice(-8);
+
       const response = await fetch("/api/gemini/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           message: textToSend.trim(),
-          history: messages.slice(-8), // send recent conversation turns
+          history: chatHistory,
           contextData: projects,
           modelMetrics,
           driverRankings,
