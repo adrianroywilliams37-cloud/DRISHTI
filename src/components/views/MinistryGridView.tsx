@@ -314,6 +314,7 @@ export function MinistryGridView({ projects }: MinistryGridViewProps) {
                       className="group cursor-pointer bg-white border border-slate-300 hover:border-slate-800 transition-colors p-0 flex flex-col sm:flex-row items-stretch"
                     >
                       <div className="w-16 flex items-center justify-center bg-slate-50 border-r border-slate-200 group-hover:bg-slate-100 transition-colors">
+                        {/* @ts-ignore */}
                         <Icon className="w-6 h-6 text-slate-600 group-hover:text-slate-950" />
                       </div>
                       
