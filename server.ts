@@ -82,6 +82,21 @@ const CompleteProjectSchema = z.object({
   id: z.string(),
 });
 
+const PredictRiskSchema = z.object({
+  project_id: z.string(),
+  vectorized_features: z.array(z.number())
+});
+
+const EvaluateBidderSchema = z.object({
+  contractor_id: z.string(),
+  company_name: z.string(),
+  past_projects_completed: z.number(),
+  avg_delay_variance_days: z.number(),
+  active_litigation_count: z.number(),
+  current_liquidity_ratio: z.number(),
+  subcontractor_churn_pct: z.number()
+});
+
 
 app.use(express.json({ limit: "10mb" }));
 
@@ -801,6 +816,107 @@ ${documentText.substring(0, 5000)} // Truncating to avoid massive payloads for t
       error: error.message || "Failed to parse document",
     });
   }
+});
+
+// Predict Risk API Endpoint
+app.post("/api/predict-risk", (req: any, res: any) => {
+  const result = PredictRiskSchema.safeParse(req.body);
+  if (!result.success) {
+    return res.status(400).json({ error: "Validation failed", issues: result.error.issues });
+  }
+
+  const { project_id, vectorized_features } = result.data;
+  
+  // Dummy logic for predictive risk inference
+  // [financial, physical, delay, cost_overrun, risk]
+  const delay = vectorized_features[2] || 0;
+  const cost_overrun = vectorized_features[3] || 0;
+  const initialRisk = vectorized_features[4] || 0;
+  
+  let riskScore: 'Critical' | 'High' | 'Moderate' | 'Low' = 'Low';
+  let renderStatus: 'BlinkingRed' | 'Amber' | 'Green' = 'Green';
+  
+  if (delay > 12 || cost_overrun > 20 || initialRisk > 80) {
+    riskScore = 'Critical';
+    renderStatus = 'BlinkingRed';
+  } else if (delay > 6 || cost_overrun > 10 || initialRisk > 50) {
+    riskScore = 'High';
+    renderStatus = 'Amber';
+  } else if (delay > 3 || initialRisk > 30) {
+    riskScore = 'Moderate';
+    renderStatus = 'Amber';
+  }
+
+  res.json({
+    project_id,
+    timestamp: new Date().toISOString(),
+    analysis_summary: {
+      ai_risk_score: riskScore,
+      anomaly_score: Math.random() * 0.5 + (riskScore === 'Critical' ? 0.5 : 0) // random score logic
+    },
+    visualization_input: {
+      render_status: renderStatus,
+      cascading_delay_prediction: "Impact isolated to phase 2"
+    }
+  });
+});
+
+// Evaluate Bidder API Endpoint
+app.post("/api/evaluate-bidder", (req: any, res: any) => {
+  const result = EvaluateBidderSchema.safeParse(req.body);
+  if (!result.success) {
+    return res.status(400).json({ error: "Validation failed", issues: result.error.issues });
+  }
+
+  const {
+    contractor_id,
+    company_name,
+    past_projects_completed,
+    avg_delay_variance_days,
+    active_litigation_count,
+    current_liquidity_ratio,
+    subcontractor_churn_pct
+  } = result.data;
+
+  // Simple hardcoded/rule-based mock logic for Genesis Engine
+  let risk_tier = "Moderate Risk";
+  let render_color = "amber";
+  let recommended_action = "AUTHORIZE_PROCUREMENT";
+  let genesis_score = 0.5;
+  const drivers: string[] = [];
+
+  if (active_litigation_count >= 3) {
+    drivers.push("High Litigation Activity");
+  }
+  if (avg_delay_variance_days > 100) {
+    drivers.push(`Delay Variance: +${avg_delay_variance_days} Days`);
+  }
+  if (current_liquidity_ratio < 1.0) {
+    drivers.push("Sub-Optimal Liquidity Ratio");
+  }
+  if (subcontractor_churn_pct > 15) {
+    drivers.push("High Subcontractor Churn");
+  }
+
+  if (drivers.length >= 3 || active_litigation_count >= 3 || current_liquidity_ratio < 0.9) {
+    risk_tier = "High Risk";
+    render_color = "mahogany";
+    recommended_action = "REJECT_TECHNICAL_BID";
+    genesis_score = 0.85;
+  } else if (drivers.length === 0 && past_projects_completed > 5) {
+    risk_tier = "Low Risk";
+    render_color = "emerald";
+    recommended_action = "AUTHORIZE_PROCUREMENT";
+    genesis_score = 0.15;
+  }
+
+  res.json({
+    genesis_score,
+    risk_tier,
+    render_color,
+    primary_risk_drivers: drivers.length > 0 ? drivers : ["No Significant Risk Drivers"],
+    recommended_action
+  });
 });
 
 async function startServer() {
