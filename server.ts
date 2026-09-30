@@ -4,6 +4,8 @@ import { GoogleGenAI } from "@google/genai";
 import dotenv from "dotenv";
 import { z } from "zod";
 import { CacheManager } from "./src/data/db";
+import multer from "multer";
+import os from "os";
 
 dotenv.config();
 
@@ -100,8 +102,6 @@ const EvaluateBidderSchema = z.object({
 
 app.use(express.json({ limit: "10mb" }));
 
-const multer = require('multer');
-const os = require('os');
 const upload = multer({ dest: os.tmpdir() });
 
 // Extract DPR mock
